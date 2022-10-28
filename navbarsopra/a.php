@@ -10,16 +10,11 @@
 <body>
 
 <ul>
-  <li><a href="home.html">Home</a></li>
-  <li><a href="elencoOG.html">Oggetti smarriti</a></li>
+  <li><a href="home.php">Home</a></li>
+  <li><a href="elencoOG.php">Oggetti smarriti</a></li>
   <li><a href="#contact">Contact</a></li>
   <li style="float:right"><a href="#about">About</a></li>
 </ul>
-<img alt="mappa" src="mappa.png" class="map" usemap="#classi">
-<map name="classi" id="classi">
-	<area shape="rect" coords="30, 30, 160, 173" href="http://www.regione.vda.it/" target="_blank" alt="206">
-</map>
-<button class="button button1">Green</button>
-<button class="button button2">Blue</button>
+<img src="test.jpg" alt="test">
 </body>
 </html>
