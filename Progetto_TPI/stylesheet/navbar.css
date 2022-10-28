@@ -2,11 +2,10 @@
   
   
   .navbar {
-    margin:0;
     overflow: hidden;
     background-color: black;
-    position: sticky;
-    margin: -10px;
+    
+    margin: -8px;
     top: 0;
   }
   
