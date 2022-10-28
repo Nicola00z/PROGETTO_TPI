@@ -9,7 +9,5 @@
     <a href='elencoOG.php'>Oggetti smarriti</a>
     <a href='#contact'>Contact</a>
     <a class='right' href='./Login/login.php'>Login</a>
-    
-  </ul>
   </div>";
 ?>
