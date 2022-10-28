@@ -1,0 +1,65 @@
+body {
+    background-color: lightblue;
+}
+
+label{
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    line-height: 26.4px;
+}
+
+h4{
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    line-height: 26.4px;
+}
+
+#FormDiv {
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 16;
+
+}
+
+h1 {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    line-height: 26.4px;
+    text-align: center;
+    font-size: 30;
+    color: blue;
+    
+}
+
+.button{
+    width: 15%;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: black;
+    padding: 2px;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    line-height: 26.4px;
+    margin: 10px
+}
+
+.input{
+    text-align: center;
+    width: 40%;
+    border-radius: 5px;
+    border-width: 2px;
+    margin: 2px;
+    
+}

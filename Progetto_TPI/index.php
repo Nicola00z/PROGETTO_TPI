@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+    <link rel="stylesheet" href="./stylesheet/index.css">
+   
 
 <?php
-    include_once("footer.php");
+    include_once("navbar.php");
    echo "<h1> Aule Marconi </h1> ";
-   echo "<a href='Login/login.html'> <button type='button'> TEST </button> </a>"
+   echo "<a href='Login/login.php'> <button type='button'> TEST </button> </a>"
 
 ?>
 

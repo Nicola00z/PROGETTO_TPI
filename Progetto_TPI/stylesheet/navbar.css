@@ -1,0 +1,37 @@
+
+  
+  
+  .navbar {
+    margin:0;
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    margin: -10px;
+    top: 0;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    margin:0;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  
+
+  .navbar a.right {
+    float: right;
+  }
+
+  .navbar a:hover{
+    background-color:lightslategray;
+    transition-duration: 0.4s;
+  }
+ 
+  
+  
+ 
