@@ -2,13 +2,18 @@
   
   
   .navbar {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
     overflow: hidden;
     background-color: black;
     
     margin: -8px;
     top: 0;
   }
-  
+
+
   /* Style the navigation bar links */
   .navbar a {
     margin:0;
@@ -31,6 +36,7 @@
     transition-duration: 0.4s;
   }
  
+  
   
   
  

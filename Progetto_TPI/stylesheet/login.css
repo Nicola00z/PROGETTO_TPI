@@ -19,12 +19,12 @@ h4{
 }
 
 #FormDiv {
+    padding: 10px;
     background-color: white;
     text-align: center;
     margin: auto;
-    width: 50%;
+    width: 20%;
     border: 3px solid black;
-    padding: 10px;
     font-size: 16;
 
 }
@@ -57,9 +57,10 @@ h1 {
 
 .input{
     text-align: center;
-    width: 40%;
+    width: 35%;
     border-radius: 5px;
     border-width: 2px;
     margin: 2px;
+    padding: 10px;
     
 }

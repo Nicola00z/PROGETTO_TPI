@@ -17,12 +17,10 @@
                     <input type="password" id="passwd" name="passwd" placeholder="Password" class="input"> <br> <br> 
                     <input type="submit" value="LOGIN" class="button">
                 </form>    
-                
-                <a href="../index.php">
-                    <button style="float: left" type="button" class="button"> BACK </button>
-                </a>
             </div>
-        </div>
-        
+        </div>  
+        <?php 
+            include_once("../footer.php");
+        ?>
     </body>
 </html>
