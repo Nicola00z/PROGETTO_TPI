@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>   
 <html>
     <head>
@@ -10,7 +11,7 @@
         <div>
         <h1> LOGIN </h1> <br>
             <div id="FormDiv">
-                <form method="POST" action='personal_area.php'>
+                <form method="POST" action='authentication.php'>
                     <label for="name" > Nome Utente </label> <br>
                     <input type="text" id="name" name="name" placeholder="Nome Utente" class="input"> <br> <br>
                     <label for="passwd">Password </label> <br>

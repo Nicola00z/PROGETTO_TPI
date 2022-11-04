@@ -11,7 +11,7 @@
 
 ?>
     <ul class="list">
-        <li> <div class="ItemList"> <p style='width: 33%'>Oggetto</p> &#9;&#9;&#9;<p style='width: 33%'> Aula </p> &#9;&#9;&#9;<p style='width: 33%'> Data </p> &#9;&#9;&#9;</div> </li>
+        <li> <div class="ItemList"> <p style='width: 33%'>Oggetto</p><p style='width: 33%'> Aula </p><p style='width: 33%'> Data </p> </div> </li>
         <?php 
             include_once("items.php");
         ?>

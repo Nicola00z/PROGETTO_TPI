@@ -1,16 +1,18 @@
 <?php 
-    $items = array(
-        array(1, "Maglia", "28/10/2022", "A210"),
-        array(2, "Carica Telefono", "25/10/2022", "A320"),
-        array(3, "Sacca da ginnastica", "23/10/2022", "A053"),
-        array(4, "Portafoglio", "02/11/2022", "A241"),
-    );
+    include("../config.php");
 
-    $index = 0;
-    while($index != count($items)){
+    $sql = "SELECT *FROM oggetti";
 
-        echo "
-        <li> <div class='ItemList'> <p style='width: 33%'>" . $items[$index][1] . "</p> &#9;&#9;&#9;<p style='width: 33%'>" . $items[$index][3] . "</p> &#9;&#9;&#9;<p style='width: 33%'>" . $items[$index][2] . "</p> &#9;&#9;&#9;</div> </li>";
-        $index += 1;
+    $result = $connessione->query($sql);
+
+
+    if($result->num_rows>0){
+        while($row = $result->fetch_assoc()){
+            echo "
+            <li> <div class='ItemList'> <p style='width: 33%'>" . $row['Tipo'] . "</p> &#9;&#9;&#9;<p style='width: 33%'>" . $row['Aula'] . "</p> &#9;&#9;&#9;<p style='width: 33%'>" . $row['Data'] . "</p> &#9;&#9;&#9;</div> </li>";
+        
+        }
     }
+  
+        
 ?>

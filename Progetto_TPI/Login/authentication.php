@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    
     include_once("../config.php");
 
     if (isset($_SESSION['session_id'])) {
@@ -9,6 +9,19 @@
 
     $username = $connessione->real_escape_string($_POST['name']);
     $password = $connessione->real_escape_string($_POST['passwd']);
-    $sql = "SELECT * FROM login WHERE username = $username AND password = $password";
-
+    
+    if($username !== null){
+        $sql = "SELECT * FROM `login` WHERE Username = 'admin' AND Password = 'admin';
+        
+        $result = $connessione->query($sql);
+        if(mysqli_num_rows($result){
+            echo "Username o password invalidi";
+        }else{
+            header("personal_area.php");
+        }
+        
+    }
+    
+    
+    
 ?>
