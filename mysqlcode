@@ -1,0 +1,26 @@
+
+-- create
+CREATE TABLE Login (
+  id int primary key AUTO_INCREMENT,
+  username varchar(30) NOT NULL,
+  password varchar(30) NOT NULL,
+  level int NOT NULL
+);
+
+CREATE TABLE oggetti(
+  id int primary key AUTO_INCREMENT,
+  tipo varchar(30) NOT NULL,
+  data date ,
+  aula varchar(4),
+  details varchar(100),
+);
+
+insert into Login(username, password, level )
+VAlues ('admin', 'admin1234', 3);
+insert into Login(username, password, level )
+VAlues ('hamburger', 'test1234', 3);
+
+select * from Login where username = 'admin' and password = 'admin1234';
+
+select * from oggetti
+
