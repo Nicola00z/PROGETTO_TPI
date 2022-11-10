@@ -33,6 +33,7 @@ li a:hover:not(.active) {
     padding-top: 15px;
     width: 800px;
     height: 600px;
+    position: absolute;
 }
 
 
