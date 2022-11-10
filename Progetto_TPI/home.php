@@ -30,22 +30,22 @@ function changeFlat3(){
 
 <div>
 
-<img alt='mappa' src='mappa.jpg' class='map' usemap='#classi' style='float:left' id ='mapf0' value='0'>
+<img alt='mappa' src='./src/mappa.jpg' class='map' usemap='#classi' style='float:left' id ='mapf0' value='0'>
 <map name='classi' id='classi'>
 <area shape='rect' coords='30, 30, 175, 165' href='http://www.regione.vda.it/' >
 </map><br>
 
-<img alt='mappa' src='grey.jpg' class='map' usemap='#classi' style='float:left; visibility:hidden' id ='mapf1'>
+<img alt='mappa' src='./src/grey.jpg' class='map' usemap='#classi' style='float:left; visibility:hidden' id ='mapf1'>
 <map name='classi' id='classi'>
 <area shape='rect' coords='30, 30, 500, 450' href='http://www.youtube.com/' >
 </map><br>
 
-<img alt='mappa' src='test.jpg' class='map' usemap='#classi' style='float:left; visibility:hidden' id ='mapf2'>
+<img alt='mappa' src='./src/test.jpg' class='map' usemap='#classi' style='float:left; visibility:hidden' id ='mapf2'>
 <map name='classi' id='classi'>
 <area shape='rect' coords='30, 30, 175, 165' href='http://www.regione.vda.it/' >
 </map><br>
 
-<img alt='mappa' src='morata.jpg' class='map' usemap='#classi' style='float:left; visibility:hidden' id ='mapf3'>
+<img alt='mappa' src='./src/morata.jpg' class='map' usemap='#classi' style='float:left; visibility:hidden' id ='mapf3'>
 <map name='classi' id='classi'>
 <area shape='rect' coords='30, 30, 175, 165' href='http://www.regione.vda.it/' >
 

@@ -6,8 +6,8 @@
 
 <?php
     include_once("navbar.php");
-   echo "<h1> Aule Marconi </h1> ";
-   echo "<a href='Login/login.php'> <button type='button'> TEST </button> </a>"
+    include_once("home.php");
+    include_once("footer.php");
 
 ?>
 

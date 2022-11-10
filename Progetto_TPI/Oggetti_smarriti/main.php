@@ -7,7 +7,6 @@
 <?php
     include_once("../navbar.php");
    echo "<h1> Oggetti Smarriti </h1> ";
-   echo "<a href='Login/login.php'> <button type='button'> TEST </button> </a>"
 
 ?>
     <ul class="list">
