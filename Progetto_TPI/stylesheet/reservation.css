@@ -1,0 +1,41 @@
+
+h1{
+    text-align: center;
+
+}
+
+body{
+    background-color: lightblue;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display:inline-block;
+    margin: 10px;
+}
+
+.list{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.aule{
+    border: 2px  solid black;
+    background-color: white;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+a{
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    text-decoration: none;
+    color: Black;
+}

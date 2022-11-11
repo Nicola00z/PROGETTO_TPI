@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    
     if(!empty($_SESSION['username'])){
         require_once("personal_area.php");
     }else {

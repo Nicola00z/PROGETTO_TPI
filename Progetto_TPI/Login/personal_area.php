@@ -4,6 +4,7 @@
         <title> Login </title>
         <link rel="stylesheet" href="../stylesheet/personal_area.css">
         <?php
+            $_SESSION['start'] = 1;
             include_once("../navbar.php");
         ?>
     <body>

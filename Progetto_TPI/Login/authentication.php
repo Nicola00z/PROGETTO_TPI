@@ -22,6 +22,7 @@
             
             session_start();
             $row = mysqli_fetch_row($result);
+            $_SESSION['start'] = 1;
             $_SESSION['username'] = $username;
             $_SESSION['passwd'] = $password;
             $_SESSION['level'] = $row[3];
