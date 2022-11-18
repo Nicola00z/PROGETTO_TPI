@@ -15,6 +15,11 @@ CREATE TABLE oggetti(
   details varchar(100),
 );
 
+CREATE TABLE aule (
+ Codice varchar(4) NOT NULL,
+ PRIMARY KEY (`Codice`)
+);
+
 insert into Login(username, password, level )
 VAlues ('admin', 'admin1234', 3);
 insert into Login(username, password, level )
