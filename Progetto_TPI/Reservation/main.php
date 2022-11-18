@@ -10,13 +10,13 @@
 
 ?>  
     <a href="http://localhost/PROGETTO_TPI/Progetto_TPI/Reservation/reservation.php"> <button> Fai una prenotazione </button></a>
-    <ul class="list">
-        <?php 
-            include_once("aule.php");
-        ?>
-    </ul>
-    <?php 
-            include_once("../footer.php");
-    ?>
+    <form method="GET" action="aula.php" target="_blank">
+
+        <ul class="list">
+            <?php 
+                include_once("aule.php");
+            ?>
+        </ul>
+    </form>
 </body>
 </html>

@@ -27,7 +27,7 @@
             }
             
             echo "
-            <li> <input type='button' class='aule' onClick='gotopage(this.id)' value=' " . $row['Codice'] . "' id=' " . $row['Codice'] . "' /> </li>";
+            <li> <a href='aula.php' ><button type='submit' name='aula' value=' " .  $row['Codice'] . "' class='aule'> ". $row['Codice'] . " </button> </a> </li>";
         
         }
     }

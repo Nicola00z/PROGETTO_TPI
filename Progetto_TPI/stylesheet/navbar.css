@@ -8,7 +8,9 @@
     font-weight: 800;
     overflow: hidden;
     background-color: black;
-    margin: -8px;
+    width: 100%;
+    margin-left: -8px;
+    margin-top: -8px;
     top: 0;
   }
 

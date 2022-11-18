@@ -30,6 +30,9 @@
                     <input type="submit" value="LOGIN" class="button">
                 </form>    
             </div>
+            <?php 
+                
+            ?>
         </div>  
     </body>
 </html>
