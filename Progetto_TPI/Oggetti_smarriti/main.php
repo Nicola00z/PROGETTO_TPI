@@ -15,8 +15,5 @@
             include_once("items.php");
         ?>
     </ul>
-    <?php 
-            include_once("../footer.php");
-    ?>
 </body>
 </html>

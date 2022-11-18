@@ -6,7 +6,18 @@
         <link rel="stylesheet" href="../stylesheet/login.css">
         
         <?php
-            include_once("../navbar.php");
+            echo "
+            <link rel='stylesheet' href='http://localhost/PROGETTO_TPI/Progetto_TPI/stylesheet/navbar.css'>
+            </head>
+            <body>
+            <div class='navbar'>
+            
+            <a href='http://localhost/PROGETTO_TPI/Progetto_TPI/index.php'>Home</a>
+            <a href='http://localhost/PROGETTO_TPI/Progetto_TPI/Oggetti_smarriti/main.php'>Oggetti smarriti</a>
+            <a href='http://localhost/PROGETTO_TPI/Progetto_TPI/Reservation/main.php'> Aule e Prenotazioni </a>
+            <a href='#contact'>Contact</a>
+            <a class='right' href='http://localhost/PROGETTO_TPI/Progetto_TPI/Login/main.php'>Login</a>
+          </div>"
         ?>
         <div>
         <h1> LOGIN </h1> <br>
@@ -20,8 +31,5 @@
                 </form>    
             </div>
         </div>  
-        <?php 
-            include_once("../footer.php");
-        ?>
     </body>
 </html>

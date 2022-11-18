@@ -1,5 +1,5 @@
 body{
-    background-color: lightblue;
+    background-color:#101820FF;
 }
 
 h1 {
@@ -19,20 +19,25 @@ p{
     margin-left: 15%;
 }
 
+h1{
+    color: #FEE715FF ;
+}
+
 .ItemList{
     margin-top: 2px;
     margin-bottom: 2px;
-    background-color: white;
+    background-color:#FEE715FF  ;
     width: 100%;
     border: 2px  solid black;
     border-width: 2px;
-    color: purple;
+    color: black;
     display: inline-flex;
+    border-radius: 3px;
 
 }
 
 .list{
     padding-left: 5px;
     padding-right: 10px;
-    background-color: lightgreen;
+    background-color: white;
 }

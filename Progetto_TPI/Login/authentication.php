@@ -27,7 +27,7 @@
             $_SESSION['passwd'] = $password;
             $_SESSION['level'] = $row[3];
 
-            include("personal_area.php");
+            include("../Personal_area/personal_area.php");
         }
         
     }

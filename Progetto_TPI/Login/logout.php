@@ -1,5 +1,6 @@
 <?php 
     
+    session_start();
     $_SESSION['username'] = '';
     $_SESSION['level'] = '';
     session_destroy();

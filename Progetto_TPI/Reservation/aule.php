@@ -21,13 +21,13 @@
                 
                 
                 if($count != 1){
-                    echo "</div> <div";
+                    echo "</div> <div>";
                 }
                 echo "<div class='level'> <h2>" . (($current_level==0)?'Piano terra': $current_level . "° piano"). " </h2> ";
             }
             
             echo "
-            <li> <a href='aula.php' ><div class='aule'> <p> " . $row['Codice'] . " </p> </div> </a> </li>";
+            <li> <input type='button' class='aule' onClick='gotopage(this.id)' value=' " . $row['Codice'] . "' id=' " . $row['Codice'] . "' /> </li>";
         
         }
     }
