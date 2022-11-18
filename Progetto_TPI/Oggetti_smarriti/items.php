@@ -9,7 +9,7 @@
     if($result->num_rows>0){
         while($row = $result->fetch_assoc()){
             echo "
-            <li> <div class='ItemList'> <p style='width: 33%'>" . $row['Tipo'] . "</p> &#9;&#9;&#9;<p style='width: 33%'>" . $row['Aula'] . "</p> &#9;&#9;&#9;<p style='width: 33%'>" . $row['Data'] . "</p> &#9;&#9;&#9;</div> </li>";
+            <li> <div class='ItemList'> <p style='width: 33%'>" . $row['tipo'] . "</p> &#9;&#9;&#9;<p style='width: 33%'>" . $row['aula'] . "</p> &#9;&#9;&#9;<p style='width: 33%'>" . $row['data'] . "</p> &#9;&#9;&#9;</div> </li>";
         
         }
     }

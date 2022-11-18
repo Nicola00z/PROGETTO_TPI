@@ -27,7 +27,7 @@
             }
             
             echo "
-            <li> <a href='aula.php' ><div class='aule'> <p> " . $row['Codice'] . " </p> </div> </a> </li>";
+            <li> <a href='aula.php' ><button type='submit' name='aula' value=' " .  $row['Codice'] . "' class='aule'> ". $row['Codice'] . " </button> </a> </li>";
         
         }
     }

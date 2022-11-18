@@ -21,6 +21,7 @@
                 case 3 :
                     echo "<a href='../reservation'><button> Reservation </button></a>";
                     echo "<a href='../Oggetti_Smarriti'><button> Oggetti Smarriti </button></a>";
+                    echo "<a href='register.php'><button> Crea account </button></a>";
             }
 
 

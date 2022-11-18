@@ -19,7 +19,7 @@
         if(mysqli_num_rows($result) == 0){
             echo "Username o password invalidi";
         }else{
-            
+        
             session_start();
             $row = mysqli_fetch_row($result);
             $_SESSION['start'] = 1;
