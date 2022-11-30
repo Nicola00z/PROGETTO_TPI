@@ -64,3 +64,22 @@ h1 {
     padding: 10px;
     
 }
+
+.errordiv{
+    text-align: center;
+    background-color: crimson;
+    border: 2px black solid;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
+
+.errordiv p{
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}

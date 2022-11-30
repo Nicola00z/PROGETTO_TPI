@@ -1,8 +1,8 @@
 <?php
-    if( session_status() !== PHP_SESSION_ACTIVE AND (!empty($_SESSION['username']))){
-      session_start();
-    }
-    if( session_status() === PHP_SESSION_ACTIVE){
+   
+   @session_start();
+    
+    if( isset($_SESSION['username'])){
         echo "
     <link rel='stylesheet' href='http://localhost/PROGETTO_TPI/Progetto_TPI/stylesheet/navbar.css'>
     </head>

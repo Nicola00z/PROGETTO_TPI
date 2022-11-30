@@ -8,3 +8,69 @@ h1 {
 body{
     background-color: lightblue;
 }
+
+.reservations{
+    width: 32%;
+    text-align: center;
+    border: 3px solid black;
+    padding-bottom: 1%;
+    margin-left: 1%;
+    background-color: white;
+}
+
+.reservations h2{
+    width: 100%;
+    border-bottom: 3px solid black;
+    margin-top: -3px;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}
+
+.reservations button{
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.PastReserv{
+    width: 100%;
+    text-align: center;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    border-top: 2px black solid;
+}
+.PastReserv tr{
+    border: 2px black solid;
+}
+
+.reservations h3{
+    width: 100%;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}
+
+.reservations #newreserv{
+    margin-top: -20px; /* Value found on the h2 bottom margin  */
+    width: 100%;
+    padding: 5%;
+    border: none;
+    border-bottom: 2px black solid;
+    border-radius: 0;
+    background-color: white;
+}
+
+.reservations #newreserv:hover{
+    background-color: #101820FF;
+    color:snow;
+    transition-duration: 300ms;
+}

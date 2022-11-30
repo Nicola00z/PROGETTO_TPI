@@ -1,5 +1,5 @@
 body{
-    background-color:#101820FF;
+    background-color: #16161a;
 }
 
 h1 {
@@ -20,24 +20,27 @@ p{
 }
 
 h1{
-    color: #FEE715FF ;
+    color: #fffffe ;
 }
 
 .ItemList{
     margin-top: 2px;
     margin-bottom: 2px;
-    background-color:#FEE715FF  ;
+    background-color:#7f5af0  ;
     width: 100%;
     border: 2px  solid black;
     border-width: 2px;
-    color: black;
+    color: #fffffe;
     display: inline-flex;
     border-radius: 3px;
-
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
 }
 
 .list{
     padding-left: 5px;
     padding-right: 10px;
-    background-color: white;
+    background-color: #94a1b2;
 }

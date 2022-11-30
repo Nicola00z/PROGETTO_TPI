@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>   
 <html>
     <head>
@@ -20,7 +21,21 @@
           </div>"
         ?>
         <div>
-        <h1> LOGIN </h1> <br>
+            <h1> LOGIN </h1> <br>
+            
+                <?php if(isset($_SESSION['error'])){
+                    echo "<div class='errordiv'> ";
+                    switch($_SESSION['error']){
+                        case 1: echo "<p> Nome utente non trovato </p>";
+                                unset($_SESSION['error']);
+                                break;
+                        case 2: echo "<p> Passowrd errata</p>";
+                                unset($_SESSION['error']);
+                                break;
+                    } 
+                    echo "</div>";
+                } 
+            ?>
             <div id="FormDiv">
                 <form method="POST" action='authentication.php'>
                     <label for="name" > Nome Utente </label> <br>

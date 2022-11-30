@@ -13,22 +13,34 @@
     
     
     if($username !== null){
-        $sql = "SELECT * FROM `login` WHERE Username ='" . $username . "' AND Password = '" . $password . "'";
-        
-        $result = $connessione->query($sql);
-        if(mysqli_num_rows($result) == 0){
-            echo "Username o password invalidi";
-        }else{
-        
-            session_start();
-            $row = mysqli_fetch_row($result);
-            $_SESSION['start'] = 1;
-            $_SESSION['username'] = $username;
-            $_SESSION['passwd'] = $password;
-            $_SESSION['level'] = $row[3];
+        $stmt = $connessione->prepare("SELECT * FROM `login` WHERE username =?");
 
-            include("../Personal_area/personal_area.php");
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $result= $stmt->get_result();
+        $row = $result->fetch_assoc();
+        session_start();
+        
+        if(mysqli_num_rows($result) != 0){
+            if(password_verify($password, $row['password'])){
+                
+                $_SESSION['start'] = 1;
+                $_SESSION['username'] = $username;
+                $_SESSION['passwd'] = $password;
+                $_SESSION['level'] = $row['level'];
+
+                include("../Personal_area/personal_area.php");
+            }else{
+                $_SESSION['error'] = 2;
+                header("Location: ./main.php");
+                exit;
+            }  
+        }else{
+            $_SESSION['error'] = 1;
+            header("Location: ./main.php");
+            exit;
         }
+        
         
     }
     
