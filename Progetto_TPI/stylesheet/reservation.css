@@ -67,4 +67,13 @@ label{
     font-style: normal;
     font-variant: normal;
     font-weight: 800;
+    
 }
+#dateNotSet{
+    color: red;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}
+

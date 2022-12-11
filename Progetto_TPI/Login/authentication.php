@@ -24,6 +24,7 @@
         if(mysqli_num_rows($result) != 0){
             if(password_verify($password, $row['password'])){
                 
+                $_SESSION['userID'] = $row['id'];
                 $_SESSION['start'] = 1;
                 $_SESSION['username'] = $username;
                 $_SESSION['passwd'] = $password;

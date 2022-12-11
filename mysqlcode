@@ -20,6 +20,32 @@ CREATE TABLE aule (
  PRIMARY KEY (`Codice`)
 );
 
+CREATE TABLE `progettotpi`.`history` (
+  `AccID` INT NOT NULL ,
+  `1Prenotazione` INT,
+  `2Prenotazione` INT,
+  `3Prenotazione` INT,
+  `4Prenotazione` INT,
+  `5Prenotazione` INT 
+  );
+
+CREATE TABLE `progettotpi`.`orario_lunedi` (
+  `Aula` VARCHAR(4) PRIMARY KEY,
+  `1Ora` VARCHAR(4),
+  `2Ora` VARCHAR(4),
+  `3Ora` VARCHAR(4),
+  `4Ora` VARCHAR(4),
+  `5Ora` VARCHAR(4),
+  `6Ora` VARCHAR(4),
+  `7Ora` VARCHAR(4),
+  `8Ora` VARCHAR(4)
+  
+);
+ALTER TABLE `history` ADD CONSTRAINT `AccFK` FOREIGN KEY (`AccID`) REFERENCES `login`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE `orario lunedi` ADD CONSTRAINT `AuleFK` FOREIGN KEY (`Aula`) REFERENCES `aule`(`Codice`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+
 insert into Login(username, password, level )
 VAlues ('admin', 'admin1234', 3);
 insert into Login(username, password, level )

@@ -1,0 +1,51 @@
+table{
+    border: 1px solid black;
+    margin: auto;
+    background-color: white;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+
+}
+td{
+    border: 1px solid black;
+    margin: -100px;
+}
+
+tr{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+#head{
+    border: 1px solid black;
+    
+    margin: -2px;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.title{
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    line-height: 26.4px;
+    margin: auto;
+    text-align: center;
+}
+
+.dayBar{
+    cursor:pointer;
+    margin: auto;
+    text-align: center;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}

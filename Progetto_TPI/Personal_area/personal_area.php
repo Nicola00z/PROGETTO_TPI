@@ -1,7 +1,7 @@
 <?php 
     include("../config.php");
     @session_start();
-    $sql = "SELECT * FROM `history` WHERE Professore = ?";
+    $sql = "SELECT Aula, Data, Ora, Username FROM `history`  INNER JOIN login ON history.AccID = login.ID WHERE Username = ? AND WHERE Data < CURRENT_DATE";
 
     $stmt = $connessione->prepare($sql);
     $stmt->bind_param("s", $_SESSION['username']);
@@ -32,7 +32,7 @@
                 if(mysqli_num_rows($result) == 0){
                     echo "<h3> Sembra che tu non abbia mai prenotato </h3> 
                         <br>
-                        <a href='../Reservations/reservation.php/'><button> PRENOTA ORA</button></a>
+                        <a href='../Reservation/Reservation_FORM.php'><button> PRENOTA ORA</button></a>
                         ";
                         exit;
                     
@@ -42,7 +42,7 @@
                         <a href="../Reservation/Reservation_FORM.php"><button id="newreserv"> make a new reservation</button></a>
 
                     </div>
-                    <table class="PastReserv">
+                    <table class="PastReserv" border=1 frame=void rules=row>
                     <tr>
                         <h3>Past Reservation</h3>
                     </tr>
@@ -64,7 +64,7 @@
                         echo "<td> ". $row['Aula'] . "</td>";
                         echo "<td> ". $row['Data'] . "</td>";
                         echo "<td> ". $row['Ora'] . "</td>";
-                        echo "<td><a href='../Reservation/reservation.php/'><button> repeat </button> </a> </td>";
+                        echo "<td><a href='../Reservation/Reservation_FORM.php?Aula=". $row['Aula'] . "&ora=". $row['Ora']."'><button> repeat </button> </a> </td>";
                         echo "</tr>";
                     }
                     ?>

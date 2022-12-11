@@ -9,7 +9,14 @@
    echo "<h1> Aule </h1> ";
 
 ?>  
-    <a href="http://localhost/PROGETTO_TPI/Progetto_TPI/Reservation/reservation.php"> <button> Fai una prenotazione </button></a>
+    <?php 
+    if(!empty($_SESSION['username'])){
+        if($_SESSION['level'] == 1 || $_SESSION['level'] == 3){
+            echo "<a href='reservation.php'> <button> Fai una prenotazione </button></a>"; 
+        
+        }
+    }
+    ?>
     <form method="GET" action="aula.php" target="_blank">
 
         <ul class="list">
