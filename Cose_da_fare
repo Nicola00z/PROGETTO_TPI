@@ -1,0 +1,14 @@
+- Finire personal_area.php
+	1. Aggiustamento tabella history
+	2. Creazione sezione oggetti_smarriti
+	3. Creazione tab per la aggiunta di un nuovo utente(solo per admin)
+- Aggiungere bottone modifica su oggetti (Solo se permessi)
+- Creazione pagina dell'aula singola
+- Integrazione della mappa(fava)
+- Integrazione della pagina contatti
+- MODIFICA CSS
+- Aggiunta delle prenotazioni
+- Modifica database
+- Dump dati database // sopratutto orario aule etc.
+
+Oserei aggiungere un dio porco
