@@ -1,47 +1,36 @@
-
-  
-  
-  .navbar {
-    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 800;
-    overflow: hidden;
-    background-color: black;
-    width: 100%;
-    
-    padding:0;
-    top: 0 ;
-  }
+.navbar {
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 800;
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  left:0;
+  top: 0;
+  z-index:4;
+  position: fixed;
+}
 
 
-  /* Style the navigation bar links */
-  .navbar a {
-    margin:0;
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-  }
-  
-  
+/* Style the navigation bar links */
+.navbar a {
+  margin:0;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
 
-  .navbar a.right {
-    float: right;
-  }
 
-  .navbar a:hover{
-    background-color:lightslategray;
-    transition-duration: 0.4s;
-  }
- 
-  body{
-    width: auto;
-    border:0;
-    margin:0;
-  }
-  
-  
- 
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover{
+  background-color:lightslategray;
+  transition-duration: 0.4s;
+}

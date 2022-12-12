@@ -1,12 +1,15 @@
 <?php
+
     require("../config.php");
+    session_start();
+    if(empty($_SESSION['username'])){
+        header("Location: ../login/main.php");
+    }
 
     $sql = "SELECT * FROM aule";
 
     $result = $connessione->query($sql);
-    if(empty($_SESSION['username'])){
-        header("Location: ../Login/main.php");
-    }
+
 ?>
 
 <!DOCTYPE html>

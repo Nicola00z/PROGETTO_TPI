@@ -1,7 +1,7 @@
 <?php 
     include("../config.php");
     @session_start();
-    $sql = "SELECT Aula, Data, Ora, Username FROM `history`  INNER JOIN login ON history.AccID = login.ID WHERE Username = ? AND WHERE Data < CURRENT_DATE";
+    $sql = "SELECT Aula, Data, Ora, Username FROM `history`  INNER JOIN login ON history.AccID = login.ID WHERE Username = ?";
 
     $stmt = $connessione->prepare($sql);
     $stmt->bind_param("s", $_SESSION['username']);
