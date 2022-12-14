@@ -1,10 +1,13 @@
 body{
-    background-color: #16161a;
+    padding-top:35px;
+    background-color: lightblue;
 }
 
 h1 {
     text-align: center;
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000,
+    2px 2px #000, -2px -2px #000, 2px -2px #000, -2px 2px #000;
 }
 
 ul{
@@ -26,7 +29,7 @@ h1{
 .ItemList{
     margin-top: 2px;
     margin-bottom: 2px;
-    background-color:#7f5af0  ;
+    background-color:#78ABE5  ;
     width: 100%;
     border: 2px  solid black;
     border-width: 2px;
