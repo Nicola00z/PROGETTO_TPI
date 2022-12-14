@@ -16,8 +16,10 @@
 <!DOCTYPE html>   
 <html>
     <head>
-        <title> Login </title>
+        <title> Personal area </title>
         <link rel="stylesheet" href="../stylesheet/personal_area.css">
+        <script src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <?php
             include_once("../navbar.php");
         ?>
@@ -25,57 +27,19 @@
         <?php
             echo "<h1> Ciao " . $_SESSION['username'] . "</h1>";
         ?>
-        
-        <div class='reservations'>
-            <h2> Reservations </h2>
-            <?php
-                if(mysqli_num_rows($result) == 0){
-                    echo "<h3> Sembra che tu non abbia mai prenotato </h3> 
-                        <br>
-                        <a href='../Reservation/Reservation_FORM.php'><button> PRENOTA ORA</button></a>
-                        ";
-                        exit;
-                    
-                }else{
-                    ?> 
-                    <div>
-                        <a href="../Reservation/Reservation_FORM.php"><button id="newreserv"> make a new reservation</button></a>
-
-                    </div>
-                    <table class="PastReserv" border=1 frame=void rules=row>
-                    <tr>
-                        <h3>Past Reservation</h3>
-                    </tr>
-                    <tr>
-                        <td>Aula</td>
-                        <td>Data</td>
-                        <td>Ora</td>
-                        <td>Repeat</td>
-                    </tr>
-                    <?php 
-                    if(mysqli_num_rows($result) > 5){
-                        $nrows = 5;
-                    }else{
-                        $nrows = mysqli_num_rows($result);
-                    }
-                    for($i = 0; $i < $nrows ; $i++){
-                        $row = $result->fetch_assoc();
-                        echo "<tr>";
-                        echo "<td> ". $row['Aula'] . "</td>";
-                        echo "<td> ". $row['Data'] . "</td>";
-                        echo "<td> ". $row['Ora'] . "</td>";
-                        echo "<td><a href='../Reservation/Reservation_FORM.php?Aula=". $row['Aula'] . "&ora=". $row['Ora']."'><button> repeat </button> </a> </td>";
-                        echo "</tr>";
-                    }
-                    ?>
-                    </table>
-                    <?php
-                }
-            ?>
-        
-
-
+        <div id="notific">
+            <span></span>
         </div>
+        <?php
+            switch($_SESSION['level']){
+                case 1: include("reservtable.php");break;
+                case 2: include("OStable.php");break;
+                case 3: echo "<div class='tables'>";include("reservtable.php"); include("OStable.php"); echo"</div>"; include("addUser.php");
+            }
+        ?>
+        
+        
+
         <!-- <?php
             //$reserv = "<div class='reservations'><a href='../reservation'><button> Reservation </button></a></div>";
            // $OS = "<div class='OggSmarriti'><a href='../Oggetti_Smarriti'><button> Oggetti Smarriti </button></a></div>";
@@ -94,5 +58,10 @@
 
 
         ?> -->
+        <script>
+             window.onload = function() {
+                notification();
+             }
+        </script>
     </body>
 </html>

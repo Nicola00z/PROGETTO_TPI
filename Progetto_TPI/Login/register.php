@@ -1,4 +1,9 @@
-
+<?php
+    @session_start();
+    if(empty($_SESSION['username'])){
+        header("Location: ../login/main.php");
+    }
+?>
 <!DOCTYPE html>   
 <html>
     <head>

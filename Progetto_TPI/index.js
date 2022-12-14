@@ -52,6 +52,7 @@ if(currentday == 5){
             let img
             if(schoolHour != 10){
                 if(piano == 0){
+                    console.log(delZeros(indivResponse[0]));
                     img = "I" + delZeros(indivResponse[0]);
                 }else{
                     img = "I" + indivResponse[0].substr(1,3);
@@ -83,9 +84,10 @@ if(currentday == 5){
     
 
 function delZeros(strin){
-    if(strin.substr(2,2) == "00"){
-        return strin.charAt(0) +  strin.charAt(1); 
+    console.log(strin.substr(2,1));
+    if(strin.substr(1,2) == "00"){
+        return strin.charAt(1); 
     }else{
-        return strin.charAt(0) + strin.substr(2,1);
+        return strin.substr(2,2);
     }
 }

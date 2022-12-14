@@ -9,8 +9,55 @@ body{
     background-color: lightblue;
 }
 
+.addUser{
+    text-align: center;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    
+}
+
+.tables{
+    width: 100%;
+    margin-left: 8%;
+    display: inline-flex;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}
+
+.OStable{
+    margin-left: 5%;
+    width: 40%;
+    text-align: center;
+    border: 3px solid black;
+    padding-bottom: 1%;
+    margin-left: 1%;
+    background-color: white;
+}
+
+.OStable tr{
+    border: 2px solid black;
+}
+
+.OStable h4{
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+}
+
+.newItems{
+    width: 100%;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    border-bottom: 3px solid black;
+}
+
 .reservations{
-    width: 32%;
+    width: 40%;
     text-align: center;
     border: 3px solid black;
     padding-bottom: 1%;
@@ -73,4 +120,20 @@ body{
     background-color: #101820FF;
     color:snow;
     transition-duration: 300ms;
+}
+
+span{
+    text-align: center;
+    width: 100%;
+    color: red;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}
+
+#notific{
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }

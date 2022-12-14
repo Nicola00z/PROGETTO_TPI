@@ -32,4 +32,5 @@
 
     $stmt->execute();
     
+    header("Location: ../Personal_area/personal_area.php?e=2");
 ?>
