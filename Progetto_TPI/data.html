@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+   window.onload = function(){clock()};
+   function clock() {
+
+       var data = new Date();
+       var day = data.getUTCDate();
+       var month = data.getUTCMonth()+1;
+       var year = data.getFullYear();
+       var ora = data.getHours();
+       var min = data.getMinutes();
+       var sec = data.getSeconds();
+
+       if (day < 10) {
+           day = "0" + day;
+       }
+
+       if (month < 10) {
+           month = "0" + month;
+       }
+
+       if (ora < 10) {
+           ora = "0" + ora;
+       }
+       if (min < 10) {
+           min = "0" + min;
+       }
+       if (sec < 10) {
+           sec = "0" + sec;
+       }
+
+       var output =day + "/" + month + "/" + year +"<br>"+ ora + ":" + min + ":" + sec;
+       document.getElementById("orologio").innerHTML = output;
+       setTimeout("clock()",1000);
+   }
+
+</script>
+<div><font size='15'>
+    <p style='position:absolute;top:5px;left:1200px' id='orologio'></p>
+</font></div>
+</html>
