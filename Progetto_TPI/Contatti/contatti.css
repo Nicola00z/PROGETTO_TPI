@@ -1,0 +1,52 @@
+html {
+    background-image: url('immagini4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  h1 {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  }
+  
+  h2 {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  }
+  
+  h3 {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  }
+  
+  p {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contatti{
+    z-index: 1;
+    background-color: white;
+    text-align: center ;
+  }
+  
+  .contatti:hover{
+    z-index: 1;
+    background-color:rgb(212, 212, 212);
+  }
+  
+  .lista{
+    z-index: 1;
+    background-color: white;
+  }
+  
+  .maps{
+    z-index: 1;
+    background-color: white;
+  }
+  
