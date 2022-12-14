@@ -1,32 +1,6 @@
-ul {
-  list-style-type: none;
-  margin: -8px;
-  padding: 0;
-  overflow: hidden;
-  background-color:darkslateblue;
-}
 
-li {
-  float: left;
-}
 
-li a {
-  display: block;
-  color: lightskyblue;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
-li a:hover:not(.active) {
-  background-color: lightskyblue;
-  color: black;
-  transition-duration: 0.4s;
-}
-
-.active {
-  background-color: #333;
-}
 
 .map {
   padding-top: 45px;
@@ -37,10 +11,13 @@ li a:hover:not(.active) {
 
 
 .button {
+  width: 100px;
+  height: 50px;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 10px 24px;
   text-align: center;
+  border-radius: 10px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -49,17 +26,38 @@ li a:hover:not(.active) {
   transition-duration: 0.4s;
   cursor: pointer;
   position: relative;
-  
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+  1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
 .flatButton {
   top:50px;
-  background-color: white; 
-  color: black; 
-  border: 2px solid rgb(112, 64, 0);
+  background-color:  #78ABE5;
+  color: white; 
+  border: 2px solid black;
 }
 
 .flatButton:hover {
-  background-color: rgb(199, 151, 46);
-  color: white;
+  background-color: #86FAD0;
+  color: #CEF6FF;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.603);
+  width: 120px;
+}
+
+.ex{
+  float:left;
+  margin-right: 10px;
+  position: relative;
+  top:550px;
+  width: 22px;
+  height: 22px;
+  box-shadow: 2px 1px black;
+}
+
+.te{
+  position:relative;
+  top:550px;
+  text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white,
+  0.5px 0.5px white, -0.5px -0.5px white, 0.5px -0.5px white, -0.5px 0.5px white;
+  font-weight: bolder;
 }
