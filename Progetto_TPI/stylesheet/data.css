@@ -1,0 +1,21 @@
+.clock{
+  font-size: 70px;
+  margin-top: -36px;
+}
+
+.date{
+  text-align: center;
+}
+
+.time{
+  text-shadow: 3px 0 white, -3px 0 white, 0 3px white, 0 -3px white,
+    2px 2px white, -2px -2px white, 2px -2px white, -2px 2px white;
+  width: 200px;
+  display: flex;
+  left: 1500px;
+  top:40px;
+  z-index: 1;
+  position: absolute;
+  align-items: column;
+}
+
