@@ -7,5 +7,9 @@ function notification(){
         $( "span" ).text( "Oggetto aggiunto con successo" ).show().fadeOut( 5000 );
     }else if(err == 2){
         $( "span" ).text( "Account creato con successo" ).show().fadeOut( 5000 );
+    }else if(err = 3){
+        $( "span" ).text( "Oggetto modificato con successo" ).show().fadeOut( 5000 );
+    }else if(err = 4){
+        $( "span" ).text( "Oggetto eliminato con successo" ).show().fadeOut( 5000 );
     }
 }
