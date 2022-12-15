@@ -14,7 +14,7 @@
         <?php 
         if(!empty($_SESSION['username'])){
         if($_SESSION['level'] >= 2){ // intestazione della tabella
-            echo "<li> <div class='ItemList'> <p style='width: 20%'>Oggetto</p><p style='width: 20%'> Aula </p><p style='width: 20%'> Data </p>  </li>";
+            echo "<li> <div class='ItemList'> <p style='width: 20%'>Oggetto</p><p style='width: 20%'> Aula </p><p style='width: 20%'> Data </p><div><i class='fa-solid fa-pen-to-square fa-2xl' style='margin-top: 70%; visibility:hidden'></i></div>  </li>";
 
         }else{
             echo "<li> <div class='ItemList'> <p style='width: 33%'>Oggetto</p><p style='width: 33%'> Aula </p><p style='width: 33%'> Data </p> </div> </li>";

@@ -1,16 +1,18 @@
 table{
     border: 1px solid black;
     margin: auto;
-    background-color: white;
+    background-color: #93aac5;
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
     font-style: normal;
     font-variant: normal;
-    font-weight: 800;
-
+    font-weight: bolder;
+    text-align: center;
 }
 td{
+    background-color: #78ABE5;
     border: 1px solid black;
     margin: -100px;
+    padding: 30px;
 }
 
 tr{
@@ -48,4 +50,16 @@ body{
     font-style: normal;
     font-variant: normal;
     font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.buttonDay{
+    font-size: 25px;
+    padding: 50px;
+    border-radius: 100%;
+}
+
+.buttonDay:hover{
+    transition: 1s;
+    background-color: rgb(143, 217, 169);
 }
