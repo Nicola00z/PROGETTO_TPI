@@ -1,0 +1,41 @@
+h1{
+    padding-top:35px;
+    text-align: center;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    color: white;
+    text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000,
+    2px 2px #000, -2px -2px #000, 2px -2px #000, -2px 2px #000;
+}
+
+body {
+    background-color: lightblue;
+}
+
+#objinfo{
+    width: 40%;
+    margin: auto;
+    text-align: left;
+    border: black 2px solid;
+    padding: 2%;
+    background-color:#78ABE5  ;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+
+}
+
+#delete{
+    width:40%;
+    margin: auto;
+    display: flex;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.input{
+
+}
