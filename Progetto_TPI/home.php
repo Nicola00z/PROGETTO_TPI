@@ -5,36 +5,6 @@ require("./config.php");
 <link rel='stylesheet' href='./stylesheet/indexstyle.css'>
 <script>
 
-
-var data = new Date();
-var min = data.getMinutes();
-var sec = data.getSeconds();
-var day = data.getDay();
-
-window.onload = function(){classCtrl()}; 
-
-// quando i minuti sono 0 e si riavvia la pagina cambiano le immagini, forse!!
-// problema: se si riavvia quando i minuti sono 1 le immagini non cambiano
-// servirebbe un reload automatico della pagina quando i minuti sono uguale a 0
-// non so se window.location.reload(true) funzioni
-
-function classCtrl() {
-  if(min==0){
-    window.location.reload(true)
-    for(let t = 0; t < 399; t++){
-      if(document.getElementById('I' + t)==null){
-      }else{
-        for(let _ = 1; _ < 9; _++){
-          if(lez + _ != ' '){
-            document.getElementById('I' + t).src= './src/occupata.png';
-          }else{
-          } document.getElementById('I' + t).src= './src/libera.png';
-        }
-      }
-    }
-  }
-}
-
 var piano = 0;
 
 // funzioni per il cambio di piano
