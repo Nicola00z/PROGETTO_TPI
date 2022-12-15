@@ -197,6 +197,6 @@ function changeFlat(){
 
 <input class='button flatButton' type='button' value='piano 3' id='piano3' onclick='changeVar3(); changeFlat(); changeClassStatus(3);'><br>
 
-<div><img class='ex' src='./src/libera.png'/><p class='te'> --> Aula libera </p><img class='ex' src='./src/occupata.png'/><p class='te'> --> Aula occupata </p><img class='ex' src='./src/prenotata.png'/><p class='te'> --> Aula prenotata </p>
+<div><img class='ex' src='./src/libera.png'/><p class='te'> --> Aula libera </p><img class='ex' src='./src/occupata.png'/><p class='te'> --> Aula occupata </p>
 </div>
 
