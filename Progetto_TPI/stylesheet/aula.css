@@ -54,6 +54,7 @@ body{
 }
 
 .buttonDay{
+    font-weight: bolder;
     font-size: 25px;
     padding: 50px;
     border-radius: 100%;

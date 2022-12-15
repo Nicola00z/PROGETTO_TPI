@@ -1,8 +1,13 @@
-
+body{
+    padding-top:35px;
+}
 
 h1 {
+    color:white;
     text-align: center;
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000,
+    2px 2px #000, -2px -2px #000, 2px -2px #000, -2px 2px #000;
 }
 
 body{
@@ -35,7 +40,7 @@ body{
     border: 3px solid black;
     padding-bottom: 1%;
     margin-left: 1%;
-    background-color: white;
+    background-color: #78ABE5;
 }
 
 .OStable tr{
@@ -62,7 +67,7 @@ body{
     border: 3px solid black;
     padding-bottom: 1%;
     margin-left: 1%;
-    background-color: white;
+    background-color: #78ABE5;
 }
 
 .reservations h2{
@@ -113,12 +118,11 @@ body{
     border: none;
     border-bottom: 2px black solid;
     border-radius: 0;
-    background-color: white;
+    background-color: #78ABE5;
 }
 
 .reservations #newreserv:hover{
-    background-color: #101820FF;
-    color:snow;
+    background-color: #9eb4cc;
     transition-duration: 300ms;
 }
 
@@ -136,4 +140,8 @@ span{
     width: 100%;
     margin: auto;
     text-align: center;
+}
+
+.bur{
+    background-color: #9eb4cc;
 }

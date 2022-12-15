@@ -12,7 +12,7 @@
 
 
 <div class='reservations'>
-            <h2> Reservations </h2>
+            <h2> Prenotazioni </h2>
             <?php
                 if(mysqli_num_rows($result) == 0){
                     echo "<h3> Sembra che tu non abbia mai prenotato </h3> 
@@ -24,18 +24,18 @@
                 }else{
                     ?> 
                     <div>
-                        <a href="../Reservation/Reservation_FORM.php"><button id="newreserv"> make a new reservation</button></a>
+                        <a href="../Reservation/Reservation_FORM.php"><button id="newreserv"> fai una nuova prenotaizone </button></a>
 
                     </div>
                     <table class="PastReserv" border=1 frame=void rules=row>
                     <tr>
-                        <h3>Past Reservation</h3>
+                        <h3>Prenotazioni precedenti</h3>
                     </tr>
                     <tr>
                         <td>Aula</td>
                         <td>Data</td>
                         <td>Ora</td>
-                        <td>Repeat</td>
+                        <td>Ripeti</td>
                     </tr>
                     <?php 
                     if(mysqli_num_rows($result) > 5){
@@ -49,7 +49,7 @@
                         echo "<td> ". $row['Aula'] . "</td>";
                         echo "<td> ". $row['Data'] . "</td>";
                         echo "<td> ". $row['Ora'] . "</td>";
-                        echo "<td><a href='../Reservation/Reservation_FORM.php?Aula=". $row['Aula'] . "&ora=". $row['Ora']."'><button> repeat </button> </a> </td>";
+                        echo "<td><a href='../Reservation/Reservation_FORM.php?Aula=". $row['Aula'] . "&ora=". $row['Ora']."'><button class='bur'> Ripeti </button> </a> </td>";
                         echo "</tr>";
                     }
                     ?>

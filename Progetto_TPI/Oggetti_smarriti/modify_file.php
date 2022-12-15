@@ -14,8 +14,9 @@
         <?php 
             include("../navbar.php");
         ?>
-            <h1> Modifica Oggetto</h1>
+            <h1> Modifica Oggetti </h1>
             <br>
+            
             <form method="GET" action="edit_object.php" id="objinfo">
                 <table>
                     <tr><td>
@@ -32,9 +33,9 @@
                         </tr>
                     <tr>
                         <td>
-                    <label for="type"> Nuovo oggetto </label> </td>
+                    <label for="type"> Nome oggetto </label> </td>
                     <td>
-                    <input type="text" id="type" name="type" class="input"> <br>
+                    <input type="text" id="type" name="type" > <br>
                         </td>
                         </tr>
                     <tr><td>
@@ -60,15 +61,18 @@
                         </td>
                 </tr>
                     
-                        <td style="text-align:center; width: 100%;">
-                        <input type="submit" value="MODIFICA" class="input" >
+                        <td style="text-align:center; width: 100%;"></td>
+                        <td><input type="submit" value="MODIFICA" class="modify" >
                         </td>
                     
                 </table>
             </form>
+
             <form id="delete" action="delete.php" method="GET">
-                <label for="id"> Oggetto da eliminare</label>
-                <select name="id" form="delete" id="id">
+
+            <label id="id"> Oggetto da eliminare: </label>
+
+                <select name="id" form="delete" id="sld">
                     <?php
                         $sql="SELECT * FROM oggetti";
 
@@ -78,9 +82,12 @@
                             echo "<option value='".$row['id']."'> ". $row['id'] . " - ". $row['tipo'] ." </option>";
                         }
                     ?>
-                </select> 
-                <input type="submit" value="Elimina">
+                </select>
+                
+                <input class='modify'type="submit" style='width:5%; height:40px;margin-left: 1%' value="Elimina">
+
             </form>
+            
             <script>
              window.onload = function() { // carico i dati di default ricevuti dall'url
                 setData();

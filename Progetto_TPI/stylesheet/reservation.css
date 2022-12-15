@@ -1,7 +1,8 @@
 
 h1{
-    color: white;
+    color:white;
     text-align: center;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
     text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000,
     2px 2px #000, -2px -2px #000, 2px -2px #000, -2px 2px #000;
 }
