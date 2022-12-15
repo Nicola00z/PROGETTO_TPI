@@ -3,16 +3,11 @@
     include_once("../config.php");
     
 
-    if (isset($_SESSION['session_id'])) {
-        header('Location: dashboard.php');
-        exit;
-    }
-
     $username = $connessione->real_escape_string($_POST['name']);
     $password = $connessione->real_escape_string($_POST['passwd']);
     
     
-    if($username !== null){
+    if($username !== null){ // Guardo se l'input dell'utente è stato settato
         $stmt = $connessione->prepare("SELECT * FROM `login` WHERE username =?");
 
         $stmt->bind_param("s", $username);
@@ -21,8 +16,8 @@
         $row = $result->fetch_assoc();
         session_start();
         
-        if(mysqli_num_rows($result) != 0){
-            if(password_verify($password, $row['password'])){
+        if(mysqli_num_rows($result) != 0){ // guardo se risulta un username associato
+            if(password_verify($password, $row['password'])){ // controllo la password inserita
                 
                 $_SESSION['userID'] = $row['id'];
                 $_SESSION['start'] = 1;
@@ -30,15 +25,15 @@
                 $_SESSION['passwd'] = $password;
                 $_SESSION['level'] = $row['level'];
 
-                include("../Personal_area/personal_area.php");
+                include("../Personal_area/personal_area.php"); // includo l'area personale
             }else{
                 $_SESSION['error'] = 2;
-                header("Location: ./main.php");
+                header("Location: ./main.php"); // ritorna password sbagliata
                 exit;
             }  
         }else{
             $_SESSION['error'] = 1;
-            header("Location: ./main.php");
+            header("Location: ./main.php"); // ritorna username non trovato
             exit;
         }
         

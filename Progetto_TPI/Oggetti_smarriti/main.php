@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="http://localhost/PROGETTO_TPI/Progetto_TPI/stylesheet/OSMain.css">
-    <script src="https://kit.fontawesome.com/e4dd0c0f42.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e4dd0c0f42.js" crossorigin="anonymous"></script> <!-- importazione delle icone -->
 
 <?php
     include_once("../navbar.php");
@@ -13,7 +13,7 @@
        
         <?php 
         if(!empty($_SESSION['username'])){
-        if($_SESSION['level'] >= 2){
+        if($_SESSION['level'] >= 2){ // intestazione della tabella
             echo "<li> <div class='ItemList'> <p style='width: 20%'>Oggetto</p><p style='width: 20%'> Aula </p><p style='width: 20%'> Data </p>  </li>";
 
         }else{

@@ -77,8 +77,8 @@ if(currentday == 5){
         }
         
       }
-      console.log(day + " " + piano + " " + schoolHour);
-        xmlhttp.open("GET", "getClassStatus.php?q=" + day + "&piano=" + piano + "&ora=" + schoolHour);
+      console.log(currentday + " " + piano + " " + schoolHour);
+        xmlhttp.open("GET", "getClassStatus.php?q=" + currentday + "&piano=" + piano + "&ora=" + schoolHour);
         xmlhttp.send();
     }
     

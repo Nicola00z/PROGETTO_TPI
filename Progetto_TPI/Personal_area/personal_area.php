@@ -37,27 +37,6 @@
                 case 3: echo "<div class='tables'>";include("reservtable.php"); include("OStable.php"); echo"</div>"; include("addUser.php");
             }
         ?>
-        
-        
-
-        <!-- <?php
-            //$reserv = "<div class='reservations'><a href='../reservation'><button> Reservation </button></a></div>";
-           // $OS = "<div class='OggSmarriti'><a href='../Oggetti_Smarriti'><button> Oggetti Smarriti </button></a></div>";
-            
-            // switch($_SESSION['level']){
-            //     case 1 :
-            //         echo $reserv;
-            //     case 2 :
-            //         echo $OS;
-            //     case 3 :
-            //         echo $reserv;
-            //         echo $OS;
-            //         echo "<div class='creat'><a href='register.php'><button> Crea account </button></a></div>";
-            // }
-
-
-
-        ?> -->
         <script>
              window.onload = function() {
                 notification();
