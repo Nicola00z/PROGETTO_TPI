@@ -1,10 +1,7 @@
 <?php
-
-
 require("./config.php");
+?>
 
-
-echo"
 <link rel='stylesheet' href='./stylesheet/indexstyle.css'>
 <script>
 
@@ -233,5 +230,3 @@ function changeFlat(){
 <div><img class='ex' src='./src/libera.png'/><p class='te'> --> Aula libera </p><img class='ex' src='./src/occupata.png'/><p class='te'> --> Aula occupata </p><img class='ex' src='./src/prenotata.png'/><p class='te'> --> Aula prenotata </p>
 </div>
 
-"
-?>
