@@ -14,7 +14,7 @@
         <?php 
         if(!empty($_SESSION['username'])){
         if($_SESSION['level'] >= 2){
-            echo "<li> <div class='ItemList'> <p style='width: 30%'>Oggetto</p><p style='width: 30%'> Aula </p><p style='width: 30%'> Data </p> <div style='width:10%'><p>Modifica</p></div></div> </li>";
+            echo "<li> <div class='ItemList'> <p style='width: 20%'>Oggetto</p><p style='width: 20%'> Aula </p><p style='width: 20%'> Data </p>  </li>";
 
         }else{
             echo "<li> <div class='ItemList'> <p style='width: 33%'>Oggetto</p><p style='width: 33%'> Aula </p><p style='width: 33%'> Data </p> </div> </li>";
