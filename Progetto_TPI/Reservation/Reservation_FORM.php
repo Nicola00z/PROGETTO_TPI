@@ -25,7 +25,7 @@
         <?php
             include("../navbar.php")
         ?>
-        <h1>Make a reservation</h1>
+        <h1>Fai una prenotazione</h1>
         <form mehtod="GET" action="Reservation_FORM.php" id="reserv" onsubmit="return checkDate(event);">
             <label for="Data">Giorno della prenotazione</label>
             <br> <br>
@@ -52,7 +52,7 @@
                     }
                 ?>
             </select> <br> <br>
-            <input type="submit" value="submit" class="button">
+            <input type="submit" value="CONFERMA" class="button">
             
         </form>
         <script>
