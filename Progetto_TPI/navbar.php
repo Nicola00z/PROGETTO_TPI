@@ -12,7 +12,7 @@
     <a href='http://localhost/PROGETTO_TPI/Progetto_TPI/index.php'>Home</a>
     <a href='http://localhost/PROGETTO_TPI/Progetto_TPI/Oggetti_smarriti/main.php'>Oggetti smarriti</a>
     <a href='http://localhost/PROGETTO_TPI/Progetto_TPI/Reservation/main.php'> Aule e Prenotazioni </a>
-    <a href='http://localhost/PROGETTO_TPI/Progetto_TPI/Contatti/contatti.php'>Contact</a>
+    <a href='http://localhost/PROGETTO_TPI/Progetto_TPI/contatti.php'>Contact</a>
     <a class='right' href='http://localhost/PROGETTO_TPI/Progetto_TPI/Login/logout.php'> Logout </a>
     <a class='right' href='http://localhost/PROGETTO_TPI/Progetto_TPI/Login/main.php'>Area Personale</a>
   </div>";

@@ -10,13 +10,13 @@
 
         while($row = $result->fetch_assoc()){
             if(!empty($_SESSION['username'])){
-                if($_SESSION['level'] >= 2){
-                    echo"
+                if($_SESSION['level'] >= 2){ // riga con possibilità di modifica dovuta al livello dell'account
+                    echo" 
                     
                     <li> <div class='ItemList'> <p style='width: 30%'>" . $row['tipo'] . "</p> <p style='width: 30%'>" . $row['aula'] . "</p><p style='width: 30%'>" . $row['data'] . "</p> <a href='modify_file.php?id=".$row['id']."&aula=".$row['aula']."'><div style='width:10% margin-top:4%'><i class='fa-solid fa-pen-to-square fa-2xl' style='margin-top: 70%;'></i></div> </a></div> </li>
                     
                     ";
-                }else{
+                }else{ // riga normale senza possibilità di modifica
                 
                     echo "
                     <li> <div class='ItemList'> <p style='width: 33%'>" . $row['tipo'] . "</p> &#9;&#9;&#9;<p style='width: 33%'>" . $row['aula'] . "</p> &#9;&#9;&#9;<p style='width: 33%'>" . $row['data'] . "</p> &#9;&#9;&#9;</div> </li>";

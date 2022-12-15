@@ -11,7 +11,7 @@
     $sql = "INSERT INTO oggetti(tipo, data, aula, details) VALUES (?, ?, ?, ?)";
 
     $stmt = $connessione->prepare($sql);
-    $stmt->bind_param("ssss", $tipo, $data, $aula, $details );
+    $stmt->bind_param("ssss", $tipo, $data, $aula, $details ); // assegno i valori alla dichiarazione
     $stmt->execute();
-    header("Location: ../Personal_area/personal_area.php?e=1");
+    header("Location: ../Personal_area/personal_area.php?e=1"); // ritorno alla personal area
 ?>
